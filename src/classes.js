@@ -9,4 +9,15 @@ var bar = new Foo (`bar`);
 
 console.log(bar.firstName);
 
-// console.log (`Is bar a Foo?`) bar instanceof foo;
+
+class Dog {
+  constructor (says) {
+    this.says = says;
+  }
+
+
+}
+
+var life is ruff = new Dog (`life is ruff`);
+
+console.log(life is ruff);
