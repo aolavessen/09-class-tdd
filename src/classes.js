@@ -1,23 +1,63 @@
 class Foo {
-  constructor (firstName) {
-    this.firstName = firstName;
-  }
 
 }
 
-var bar = new Foo (`bar`);
-
-console.log(bar.firstName);
-
+var bar = new Foo();
 
 class Dog {
-  constructor (says) {
-    this.says = says;
+  constructor() {
+    this.says = 'life is ruff';
   }
+}
+var dog = new Dog;
 
+class Cat {
 
+  constructor(garfield) {
+    this.garfield = garfield;
+  }
+  growl() {
+    return 'meow';
+  }
 }
 
-var life is ruff = new Dog (`life is ruff`);
+var garfield = new Cat();
 
-console.log(life is ruff);
+class FacelessMan {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+var aMan = new FacelessMan(`Jaqen H'ghar`);
+
+class Lion extends Cat {
+  constructor() {
+    super();
+    this.size = 'BIG';
+  }
+}
+
+
+class KeepSecret {
+  constructor(mySecret) {
+    this.squeal = function() {
+      return mySecret;
+    }
+  }
+}
+
+class Key {
+  constructor() {}
+}
+class Safe {
+  constructor(secret, keyhole) {
+    this.unlock = function(attempt) {
+      if (attempt === keyhole) {
+        return secret;
+      }
+
+      return undefined;
+    }
+  }
+}
